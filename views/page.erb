@@ -1,0 +1,6 @@
+<html><head><title>FRATTRACK</title></head>
+<body>
+<% @hits_by_frat.each do |frat,count|%>
+<form action="/" method="POST"><input type="hidden" name="frat" value="<%= h frat%>" /><input type="submit" value="<%=h frat %>(<%= count%>)" /></form>
+<% end %>
+</body>
